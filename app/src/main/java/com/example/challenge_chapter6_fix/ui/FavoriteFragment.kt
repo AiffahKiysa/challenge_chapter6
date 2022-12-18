@@ -1,24 +1,16 @@
 package com.example.challenge_chapter6_fix.ui
 
-import android.app.AlertDialog
-import android.content.Context
-import android.content.SharedPreferences
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
-import androidx.fragment.app.viewModels
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.example.challenge_chapter6_fix.FavoriteModelFactory
-import com.example.challenge_chapter6_fix.MainViewModelFactory
 import com.example.challenge_chapter6_fix.R
 import com.example.challenge_chapter6_fix.adapter.FavoriteMovieAdapter
-import com.example.challenge_chapter6_fix.adapter.MovieAdapter
-import com.example.challenge_chapter6_fix.data.dao.FavoriteDao
 import com.example.challenge_chapter6_fix.databinding.FragmentFavoriteBinding
 import com.example.challenge_chapter6_fix.model.Item
 import com.example.challenge_chapter6_fix.service.ApiClient

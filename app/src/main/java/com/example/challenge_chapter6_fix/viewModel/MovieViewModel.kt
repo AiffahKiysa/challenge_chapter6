@@ -1,5 +1,6 @@
 package com.example.challenge_chapter6_fix.viewModel
 
+import android.app.Application
 import android.util.Log
 import androidx.lifecycle.*
 import com.example.challenge_chapter6_fix.model.Movie
@@ -7,6 +8,7 @@ import com.example.challenge_chapter6_fix.repository.MainRepository
 import com.example.challenge_chapter6_fix.service.ApiClient
 import com.example.challenge_chapter6_fix.utils.Resource
 import dagger.hilt.android.HiltAndroidApp
+import dagger.hilt.android.lifecycle.HiltViewModel
 import dagger.hilt.android.scopes.ActivityScoped
 import dagger.hilt.android.scopes.ViewScoped
 import kotlinx.coroutines.Dispatchers
@@ -15,7 +17,7 @@ import retrofit2.Callback
 import retrofit2.Response
 import javax.inject.Inject
 
-class MovieViewModel @Inject constructor(private val mainRepository: MainRepository) : ViewModel() {
+class MovieViewModel(private val mainRepository: MainRepository) : ViewModel() {
 
     private val liveDataMovieDatabase : MutableLiveData<Movie?> = MutableLiveData()
 

@@ -15,7 +15,9 @@ import com.example.challenge_chapter6_fix.ViewModelFactory
 import com.example.challenge_chapter6_fix.data.DataUserManager
 import com.example.challenge_chapter6_fix.databinding.FragmentLoginBinding
 import com.example.challenge_chapter6_fix.viewModel.UserViewModel
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class LoginFragment : Fragment() {
     private var _binding: FragmentLoginBinding? = null
     private val binding get() = _binding!!
